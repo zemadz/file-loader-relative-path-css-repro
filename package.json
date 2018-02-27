@@ -1,0 +1,27 @@
+{
+  "name": "file-loader-relative-path-css-repro",
+  "version": "1.0.0",
+  "description": "Reproduction of relative path issue with file-loader for CSS generation.",
+  "main": "",
+  "repository": "https://github.com/zemadz/file-loader-relative-path-css-repro.git",
+  "scripts": {
+    "clean": "rimraf css",
+    "clean:output": "rimraf css/**/*.js",
+    "build": "npm run clean && webpack && npm run clean:output",
+    "start": "webpack --watch",
+    "test": "npm run build && mocha"
+  },
+  "author": "Madis Allikmaa",
+  "license": "ISC",
+  "devDependencies": {
+    "css-loader": "^0.28.10",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^1.1.8",
+    "mocha": "^5.0.1",
+    "node-sass": "^4.7.2",
+    "resolve-url-loader": "^2.2.1",
+    "rimraf": "^2.6.2",
+    "sass-loader": "^6.0.6",
+    "webpack": "^3.11.0"
+  }
+}
