@@ -16,7 +16,7 @@
   "devDependencies": {
     "css-loader": "^0.28.10",
     "extract-text-webpack-plugin": "^3.0.2",
-    "file-loader": "^1.1.8",
+    "file-loader": "^1.1.7",
     "mocha": "^5.0.1",
     "node-sass": "^4.7.2",
     "resolve-url-loader": "^2.2.1",
